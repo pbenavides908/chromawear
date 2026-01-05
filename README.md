@@ -1,84 +1,73 @@
-# categoria.html – Category View Template
+# ChromaWear – Web Application Overview
 
-`categoria.html` is the template responsible for displaying each product category within the web application.  
-It shows all products belonging to a specific category and allows users to filter and sort them by price.
+ChromaWear is a basic e-commerce style web application built with Flask and MySQL.  
+The project focuses on product management, user authentication, and a complete browsing experience without implementing online payments.
 
-## 📌 Main Purpose
+## 🛍️ Product & Category System
 
-This template is used to:
-- Display products from a selected category
-- Filter products by price range
-- Sort products by price (ascending or descending)
+The application allows users to browse products by category.  
+Each category displays its products dynamically and supports:
+- Price filtering
+- Price sorting (ascending and descending)
 
-It provides a consistent layout for all categories across the platform.
+The category view is part of a reusable template system used across the site.
 
-## 🧩 Key Features
+## 🔍 Navigation & User Experience
 
-### 🛍️ Product Browsing
-- Dynamic product listing per category
-- Price-based filtering
-- Price sorting (low to high / high to low)
-- Empty-state handling when no products are found
+All pages share a global **navbar**, which provides:
+- Product search functionality
+- Access to all categories
+- Favorites overview
+- Shopping cart overview
+- Login, registration, and user account access
 
-### ❤️ Favorites & 🛒 Cart
-- Users can add products to favorites
-- Users can add products to the shopping cart
-- Visual indicators for favorite and cart items
-- Favorites and cart counters displayed in the navbar
+## ❤️ Favorites & 🛒 Cart
 
-### 🔍 Global Navigation
-All HTML pages share a common **navbar**, which includes:
-- Product search system
-- Category navigation
-- Access to favorites
-- Access to shopping cart
-- Login / Register or User Account options
+Users can:
+- Add and remove products from favorites
+- Add products to a shopping cart
+- View favorites and cart contents at any time
 
-## 👤 User System
+These features work without a payment gateway and are designed for browsing and order management purposes.
 
-The application includes:
-- User registration and login system
-- Secure authentication using MySQL
-- Encrypted passwords
+## 👤 User Accounts & Security
+
+The application includes a complete user system:
+- User registration and login
+- Password encryption
+- MySQL database persistence
 - SQL injection protection
-- Persistent user data stored in the database
 
-Each user has access to a **profile section**, with different HTML views where they can:
+Each user has a personal profile section with different views where they can:
 - Edit personal information
-- View current orders
-- Check order history
+- View orders and order history
 
-## 🛠️ Admin Panel
+## 🛠️ Admin Management
 
-The admin panel allows administrators to:
+An advanced admin panel allows administrators to:
 - Edit and delete users
-- Add, edit, and delete products
-- Add, edit, and delete categories
+- Add, edit, and manage products
+- Create and manage categories
 - View and manage orders
 
 ## 💳 Payments
 
-This is a **basic web application**, therefore:
-- No payment gateway is implemented
-- Orders are stored and managed internally without online payments
+This project does **not** include an online payment system.  
+Orders are stored for tracking and demonstration purposes only.
 
 ## ⚙️ Technologies Used
 
-- HTML5
-- CSS3 (custom professional design)
-- Flask (Jinja2 templates)
-- MySQL database
+- Flask (Python)
+- HTML5 & CSS3 (custom professional design)
+- MySQL
+- Bootstrap
 - Font Awesome
-- Bootstrap (layout support)
 
-## ♻️ Reusability
+## 🎯 Project Purpose
 
-`categoria.html` is reusable for all categories by dynamically loading category data from the database through Flask routes.
-
-## 📁 Project Context
-
-This template is part of a Flask-based e-commerce style web application designed for learning and demonstration purposes, focusing on structure, security, and user interaction rather than payment processing.
+ChromaWear is intended as a learning and demonstration project, showcasing full CRUD functionality, secure authentication, and structured web application design.
 
 ---
 
 © 2025 – ChromaWear - pbenavides908
+
